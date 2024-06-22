@@ -128,7 +128,11 @@ body {
 }
 .service-card {
   background-color: var(--show-more);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .btn-submit {
   background-color: var(--btn-sumbit);
   color: white;
@@ -271,9 +275,40 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+.my-16 {
+  margin: 4rem 0;
+}
+.numbers-section {
+  margin: 8rem 0 !important;
+}
 
+.content-section {
+  margin: 8rem 0 !important;
+}
+
+.access-section {
+  margin: 4rem 0 !important;
+}
+.article-section {
+  margin: 8rem 0 !important;
+}
+.gift-section {
+  margin: 8rem 0 !important;
+}
+.smmpanel-section {
+  margin: 8rem 0 !important;
+}
 /* media queries */
 /* Custom CSS for small screens */
+
+@media (max-width: 1281px) {
+  #socialContainer {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .w-70 {
+    width: 90% !important ;
+  }
+}
 @media (max-width: 991.98px) {
   .navbar-collapse {
     flex-basis: 100%;
@@ -288,6 +323,29 @@ body {
   }
 }
 @media screen and (max-width: 481px) {
+  .access-section {
+    margin: 0 !important;
+  }
+  .numbers-section {
+    margin: 1.5rem 0 !important;
+  }
+
+  .content-section {
+    margin: 1.5rem 0 !important;
+  }
+
+  .article-section {
+    margin: 1.5rem 0 !important;
+  }
+  .gift-section {
+    margin: 1.5rem 0 !important;
+  }
+  .smmpanel-section {
+    margin: 1.5rem 0 !important;
+  }
+  .lines-img {
+    width: 10rem;
+  }
   .social-icons {
     width: 2.5rem;
     height: 2.5rem;
@@ -296,16 +354,23 @@ body {
     width: 100% !important;
   }
   .coverage-cards-container .swiper-slide {
-    width: 250px !important;
+    display: flex;
+    justify-content: center;
   }
-  .service-cards-container .swiper-slide {
-    width: 200px !important;
-  }
+
   .fs-7 {
     font-size: 0.875rem;
   }
+
+  .service-cards-section .swiper-button-next,
+  .service-cards-section .swiper-button-prev {
+    top: 10rem !important;
+  }
   .swiper-button-next:after,
   .swiper-button-prev:after {
+    font-size: 1rem !important;
+  }
+  .fs-m-3 {
     font-size: 1rem !important;
   }
 }

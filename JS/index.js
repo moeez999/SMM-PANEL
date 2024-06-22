@@ -181,7 +181,7 @@ function rederCoverageCards() {
       },
       1024: {
         slidesPerView: 6,
-        spaceBetween: 0,
+        spaceBetween: 30,
       },
     },
   });
@@ -374,8 +374,8 @@ function renderArticlesCards() {
       },
       breakpoints: {
         640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
+          slidesPerView: 3,
+          spaceBetween: 10,
         },
         768: {
           slidesPerView: 2,
@@ -430,7 +430,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
   // Function to animate the counter
-  function animateCounter(id, start, end, duration, suffix = "") {
+  function animateCounter(id, start, end, duration, prefix = "", suffix = "") {
     const element = document.getElementById(id);
     let startTime = null;
 
@@ -441,7 +441,7 @@ document.addEventListener("DOMContentLoaded", function () {
         Math.floor((progress / duration) * (end - start) + start),
         end
       );
-      element.textContent = value + suffix;
+      element.textContent = prefix + value + suffix;
       if (progress < duration) {
         requestAnimationFrame(updateCounter);
       }
@@ -459,10 +459,10 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           // Start counting when the section is in view
-          animateCounter("counter-years", 0, 6, 2000, " Years");
-          animateCounter("counter-users", 0, 50000, 2000);
-          animateCounter("counter-services", 0, 1200000, 2000, "m+");
-          animateCounter("counter-feedback", 0, 90, 2000, "%");
+          animateCounter("counter-years", 0, 6, 2000, "+", " Years");
+          animateCounter("counter-users", 1, 50000, 2000, "1,");
+          animateCounter("counter-services", 0, 2, 2000, "1.", "m+");
+          animateCounter("counter-feedback", 0, 90, 2000, "+", "%");
 
           // Stop observing after the animation has started
           observer.unobserve(target);
