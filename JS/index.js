@@ -1,7 +1,11 @@
 AOS.init();
 
 const socialItems = [
-  { imageUrl: "./assets/freeservices.png", text: "FREE SERVICES" },
+  {
+    imageUrl: "./assets/freeservices.png",
+    text: "FREE SERVICES",
+    href: "#gift-section",
+  },
   { imageUrl: "./assets/Facebook.png", text: "Facebook" },
   { imageUrl: "./assets/Youtube.png", text: "Youtube" },
   { imageUrl: "./assets/Twitter.png", text: "Twitter" },
@@ -11,10 +15,12 @@ const socialItems = [
 
 function createSocialItemTemplate(item) {
   return `
-        <div class="d-flex flex-column p-2 gap-2 justify-content-center align-items-center social-icons-container px-lg-4 py-lg-2 rounded-4 w-100">
-            <div class="w-100"><img class="social-icons" src="${item.imageUrl}" alt="" /></div>
-            <p class="fs-lg-6  fw-bold">${item.text}</p>
-        </div>
+        <a href=${item.href} class="text-decoration-none text-black">
+          <div class="d-flex flex-column p-2 gap-2 justify-content-center align-items-center social-icons-container px-lg-4 py-lg-2 rounded-4 w-100">
+              <div class="w-100"><img class="social-icons" src="${item.imageUrl}" alt="" /></div>
+              <p class="fs-lg-6  fw-bold">${item.text}</p>
+          </div>
+        </a>
     `;
 }
 
@@ -421,4 +427,53 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   typeWriter();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to animate the counter
+  function animateCounter(id, start, end, duration, suffix = "") {
+    const element = document.getElementById(id);
+    let startTime = null;
+
+    function updateCounter(currentTime) {
+      if (!startTime) startTime = currentTime;
+      const progress = currentTime - startTime;
+      const value = Math.min(
+        Math.floor((progress / duration) * (end - start) + start),
+        end
+      );
+      element.textContent = value + suffix;
+      if (progress < duration) {
+        requestAnimationFrame(updateCounter);
+      }
+    }
+
+    requestAnimationFrame(updateCounter);
+  }
+
+  // Set the target section
+  const target = document.querySelector(".service-numbers");
+
+  // Create an Intersection Observer instance
+  const observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Start counting when the section is in view
+          animateCounter("counter-years", 0, 6, 2000, " Years");
+          animateCounter("counter-users", 0, 50000, 2000);
+          animateCounter("counter-services", 0, 1200000, 2000, "m+");
+          animateCounter("counter-feedback", 0, 90, 2000, "%");
+
+          // Stop observing after the animation has started
+          observer.unobserve(target);
+        }
+      });
+    },
+    {
+      threshold: 0.5, // Adjust this value as needed
+    }
+  );
+
+  // Observe the target section
+  observer.observe(target);
 });

@@ -18,6 +18,7 @@
 body {
   font-family: "Baloo 2";
 }
+
 .custom-blue-bg {
   background-color: var(--blue-bg-color);
 }
@@ -228,6 +229,11 @@ body {
 }
 .join-me-soon {
   background-color: var(--join-soon);
+  border: 1px solid var(--join-soon) !important;
+}
+.join-me-soon:hover {
+  background-color: transparent;
+  color: var(--join-soon) !important;
 }
 .coverage-cards-container {
   overflow-x: hidden !important;
