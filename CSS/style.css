@@ -113,6 +113,10 @@ body {
 .px-12 {
   padding: 0 3rem;
 }
+
+.px-16 {
+  padding: 0 4rem;
+}
 .gap-24 {
   gap: 5rem;
 }
@@ -322,6 +326,27 @@ body {
 
 .aboutus-section {
   margin: 4rem auto !important;
+}
+
+/* service */
+
+.free-followers-btn {
+  background-color: var(--blue-bg-color);
+}
+
+.instagram-servicecard {
+  border: 1px solid var(--border-color);
+  width: 20rem !important;
+}
+.instagram-servicecard p {
+  margin: 0;
+}
+
+#instagram-service-slider {
+  margin: 8rem 0 !important;
+}
+.i-service-imgs {
+  background-color: var(--show-more);
 }
 /* media queries */
 /* Custom CSS for small screens */

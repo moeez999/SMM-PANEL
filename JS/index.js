@@ -26,13 +26,14 @@ function createSocialItemTemplate(item) {
 
 function createSocialItems() {
   const socialContainer = document.getElementById("socialContainer");
+  if (socialContainer) {
+    socialContainer.innerHTML = "";
 
-  socialContainer.innerHTML = "";
-
-  socialItems.forEach((item) => {
-    const itemHTML = createSocialItemTemplate(item);
-    socialContainer.innerHTML += itemHTML;
-  });
+    socialItems.forEach((item) => {
+      const itemHTML = createSocialItemTemplate(item);
+      socialContainer.innerHTML += itemHTML;
+    });
+  }
 }
 
 createSocialItems();
@@ -145,48 +146,49 @@ function converageSlide(title, description) {
 // Function to render all slides from the coverageCardsData array
 function rederCoverageCards() {
   const swiperWrapper = document.getElementById("coverage-cards-container");
-  swiperWrapper.innerHTML = ""; // Clear previous content
+  if (swiperWrapper) {
+    swiperWrapper.innerHTML = ""; // Clear previous content
 
-  coverageCardsData.forEach((card) => {
-    const slideHTML = converageSlide(card.title, card.description);
-    swiperWrapper.innerHTML += slideHTML;
-  });
+    coverageCardsData.forEach((card) => {
+      const slideHTML = converageSlide(card.title, card.description);
+      swiperWrapper.innerHTML += slideHTML;
+    });
 
-  // Initialize Swiper after slides are added
-  new Swiper(".swiper-container", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
+    // Initialize Swiper after slides are added
+    new Swiper(".swiper-container", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
       },
-      1024: {
-        slidesPerView: 6,
-        spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
-    },
-  });
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 6,
+          spaceBetween: 30,
+        },
+      },
+    });
+  }
 }
-
 // Initial render when the page loads
 rederCoverageCards();
 const serviceCards = [
@@ -241,49 +243,51 @@ function serviceslide(title, description) {
 // Function to render all slides from the serviceCards array
 function renderServiceCards() {
   const swiperWrapper = document.getElementById("service-cards-container");
-  swiperWrapper.innerHTML = ""; // Clear previous content
+  if (swiperWrapper) {
+    swiperWrapper.innerHTML = ""; // Clear previous content
 
-  serviceCards.forEach((card) => {
-    const slideHTML = serviceslide(card.title, card.description);
-    swiperWrapper.innerHTML += slideHTML;
-  });
-
-  // Initialize Swiper after slides are added
-  if (!window.swiperInstance) {
-    window.swiperInstance = new Swiper(".swiper-containers", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 6,
-          spaceBetween: 10,
-        },
-      },
+    serviceCards.forEach((card) => {
+      const slideHTML = serviceslide(card.title, card.description);
+      swiperWrapper.innerHTML += slideHTML;
     });
-  } else {
-    window.swiperInstance.update();
+
+    // Initialize Swiper after slides are added
+    if (!window.swiperInstance) {
+      window.swiperInstance = new Swiper(".swiper-containers", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 6,
+            spaceBetween: 10,
+          },
+        },
+      });
+    } else {
+      window.swiperInstance.update();
+    }
   }
 }
 
@@ -396,37 +400,39 @@ renderArticlesCards();
 document.addEventListener("DOMContentLoaded", function () {
   const text = "Access 300+ Social Media Services";
   const typewriterText = document.getElementById("typewriter-text");
-  let index = 0;
-  let isDeleting = false;
-  const typingSpeed = 100;
-  const deletingSpeed = 100;
-  const pauseBetween = 2000;
+  if (typewriterText) {
+    let index = 0;
+    let isDeleting = false;
+    const typingSpeed = 100;
+    const deletingSpeed = 100;
+    const pauseBetween = 2000;
 
-  function typeWriter() {
-    if (isDeleting) {
-      typewriterText.innerHTML = text.substring(0, index - 1);
-      index--;
+    function typeWriter() {
+      if (isDeleting) {
+        typewriterText.innerHTML = text.substring(0, index - 1);
+        index--;
 
-      if (index === 0) {
-        isDeleting = false;
-        setTimeout(typeWriter, typingSpeed);
+        if (index === 0) {
+          isDeleting = false;
+          setTimeout(typeWriter, typingSpeed);
+        } else {
+          setTimeout(typeWriter, deletingSpeed);
+        }
       } else {
-        setTimeout(typeWriter, deletingSpeed);
-      }
-    } else {
-      typewriterText.innerHTML = text.substring(0, index + 1);
-      index++;
+        typewriterText.innerHTML = text.substring(0, index + 1);
+        index++;
 
-      if (index === text.length) {
-        isDeleting = true;
-        setTimeout(typeWriter, pauseBetween);
-      } else {
-        setTimeout(typeWriter, typingSpeed);
+        if (index === text.length) {
+          isDeleting = true;
+          setTimeout(typeWriter, pauseBetween);
+        } else {
+          setTimeout(typeWriter, typingSpeed);
+        }
       }
     }
-  }
 
-  typeWriter();
+    typeWriter();
+  }
 });
 document.addEventListener("DOMContentLoaded", function () {
   // Function to animate the counter
@@ -452,28 +458,129 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Set the target section
   const target = document.querySelector(".service-numbers");
+  if (target) {
+    // Create an Intersection Observer instance
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Start counting when the section is in view
+            animateCounter("counter-years", 0, 6, 2000, "+", " Years");
+            animateCounter("counter-users", 1, 50000, 2000, "1,");
+            animateCounter("counter-services", 0, 2, 2000, "1.", "m+");
+            animateCounter("counter-feedback", 0, 90, 2000, "+", "%");
 
-  // Create an Intersection Observer instance
-  const observer = new IntersectionObserver(
-    function (entries) {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Start counting when the section is in view
-          animateCounter("counter-years", 0, 6, 2000, "+", " Years");
-          animateCounter("counter-users", 1, 50000, 2000, "1,");
-          animateCounter("counter-services", 0, 2, 2000, "1.", "m+");
-          animateCounter("counter-feedback", 0, 90, 2000, "+", "%");
+            // Stop observing after the animation has started
+            observer.unobserve(target);
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Adjust this value as needed
+      }
+    );
 
-          // Stop observing after the animation has started
-          observer.unobserve(target);
-        }
-      });
-    },
-    {
-      threshold: 0.5, // Adjust this value as needed
-    }
-  );
-
-  // Observe the target section
-  observer.observe(target);
+    // Observe the target section
+    observer.observe(target);
+  }
 });
+
+// service
+
+const serviceData = [
+  {
+    images: ["./assets/i-1.png", "./assets/i-2.png", "./assets/i-3.png"],
+    title: "instagram services - Real - No",
+    description: "Drop - 30 Refill 🔥⚡",
+  },
+  {
+    images: ["./assets/i-1.png", "./assets/i-2.png", "./assets/i-3.png"],
+    title: "instagram services - Organic - Yes",
+    description: "No Drop - 60 Refill 🔥⚡",
+  },
+  {
+    images: ["./assets/i-1.png", "./assets/i-2.png", "./assets/i-3.png"],
+    title: "instagram services - Organic - Yes",
+    description: "No Drop - 60 Refill 🔥⚡",
+  },
+  {
+    images: ["./assets/i-1.png", "./assets/i-2.png", "./assets/i-3.png"],
+    title: "instagram services - Organic - Yes",
+    description: "No Drop - 60 Refill 🔥⚡",
+  },
+  {
+    images: ["./assets/i-1.png", "./assets/i-2.png", "./assets/i-3.png"],
+    title: "instagram services - Organic - Yes",
+    description: "No Drop - 60 Refill 🔥⚡",
+  },
+  {
+    images: ["./assets/i-1.png", "./assets/i-2.png", "./assets/i-3.png"],
+    title: "instagram services - Organic - Yes",
+    description: "No Drop - 60 Refill 🔥⚡",
+  },
+  {
+    images: ["./assets/i-1.png", "./assets/i-2.png", "./assets/i-3.png"],
+    title: "instagram services - Organic - Yes",
+    description: "No Drop - 60 Refill 🔥⚡",
+  },
+];
+
+// Step 3: Function to generate card HTML using template literals
+function generateServiceCards(data) {
+  const container = document.getElementById("instagram-service-slider");
+  let cardsHTML = "";
+
+  data.forEach((service) => {
+    let imagesHTML = "";
+    service.images.forEach((src) => {
+      imagesHTML += `<img class="i-service-imgs p-2 rounded-2" src="${src}" alt="">`;
+    });
+
+    cardsHTML += `
+                    <div class="instagram-servicecard p-4 rounded-4 swiper-slide">
+                        <div class="d-flex gap-2 ">
+                            ${imagesHTML}
+                        </div>
+                        <p>${service.title}</p>
+                        <p>${service.description}</p>
+                    </div>
+                `;
+  });
+
+  container.innerHTML = cardsHTML;
+
+  new Swiper(".instagram-service-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 30,
+      },
+    },
+  });
+}
+
+generateServiceCards(serviceData);
