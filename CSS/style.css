@@ -13,6 +13,7 @@
   --border-color: #ededed;
   --show-more: #f8f8f8;
   --gift-bg: #fff3f9;
+  --border-bottom: #dddddd;
 }
 
 body {
@@ -298,6 +299,30 @@ body {
 .smmpanel-section {
   margin: 8rem 0 !important;
 }
+
+/* Login */
+.login-section {
+  margin: 8rem 0 !important;
+}
+
+.btn-login {
+  background-color: var(--color3);
+  border: 1px solid var(--color3) !important;
+}
+
+.btn-login:hover {
+  background-color: transparent;
+  color: var(--color3) !important;
+}
+.login-container {
+  background-color: var(--show-more);
+}
+
+/* about us */
+
+.aboutus-section {
+  margin: 4rem auto !important;
+}
 /* media queries */
 /* Custom CSS for small screens */
 
@@ -323,6 +348,9 @@ body {
   }
 }
 @media screen and (max-width: 481px) {
+  .w-sm-75 {
+    width: 75% !important;
+  }
   .access-section {
     margin: 0 !important;
   }

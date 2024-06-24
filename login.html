@@ -13,12 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+
     <link rel="stylesheet" href="./CSS/style.css" />
-    <title>About Us</title>
+    <title>Login</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light custom-blue-bg px-xl-4">
@@ -47,7 +44,7 @@
           >
           <a
             class="btn text-white border px-3 hover:bg-white sign-up"
-            href="signup.html"
+            href="#"
             role="button"
             >Sign Up</a
           >
@@ -55,20 +52,16 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-white fs-6" href="blog.html">BLOG</a>
+              <a class="nav-link text-white fs-6" href="#">BLOG</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fs-6" href="api.html">API</a>
+              <a class="nav-link text-white fs-6" href="#">API</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fs-6" href="contactus.html"
-                >CONTACT US</a
-              >
+              <a class="nav-link text-white fs-6" href="#">CONTACT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fs-6" href="aboutus.html"
-                >ABOUT US</a
-              >
+              <a class="nav-link text-white fs-6" href="#">ABOUT US</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -105,62 +98,49 @@
         </div>
       </div>
     </nav>
-
-    <section class="aboutus-section container mx-lg-auto px-4">
-      <h1
-        class="text-center fw-bolder animate__animated animate__bounceInRight text-blue"
-      >
-        About Us
-      </h1>
-      <p class="text-center fs-5">
-        Functional and high-quality social media services for professionals +
-        lifetime support and warranty
+    <section class="login-section">
+      <h1 class="text-center fw-bolder">Sign In / Register</h1>
+      <p class="text-center">
+        Access exclusive content and features by logging in or creating an
+        account.
       </p>
 
-      <div class="my-16">
-        <p class="animate__animated animate__fadeIn fs-5">
-          Famenex, a name inspired by the combination of "fame" and "nex"
-          meaning "your next fame," is proud to serve you. Our slogan, "Be Your
-          Next Fame. Towards Greater Fame!" reflects our commitment to enhancing
-          your presence in the digital world. As the newest company in the field
-          of social media services, we utilize artificial intelligence to
-          provide a diverse range of entirely authentic services to elevate your
-          fame.
-        </p>
-        <p class="animate__animated animate__fadeIn fs-5">
-          At Famenex, a passionate and creative team of experts has come
-          together to help you significantly increase your likes and followers.
-          We believe in the power of artificial intelligence to deliver
-          high-quality and precise services, always striving to meet our
-          customers' needs in the best possible way. With Famenex, you will be
-          one step closer to greater fame every day. Join us and experience a
-          new dimension of social media with u
-        </p>
-      </div>
-      <div>
-        <h2 class="fw-bolder animate__animated animate__bounceInLeft text-blue">
-          Company Overview
-        </h2>
-        <div class="my-4">
-          <p class="animate__animated animate__fadeIn fs-5">
-            Famenex was founded with a vision to revolutionize the way
-            individuals and businesses enhance their social media presence.
-            Since our inception, we have embraced innovation and technology,
-            particularly artificial intelligence, to provide cutting-edge social
-            media services. Our journey began with the mission to empower our
-            clients, enabling them to achieve greater visibility and recognition
-            in the digital realm.
-          </p>
-          <p class="animate__animated animate__fadeIn fs-5">
-            At Famenex, our core values are integrity, excellence, and
-            customer-centricity. We believe in building authentic connections
-            and delivering real results. Our mission is to offer unparalleled
-            social media solutions that drive engagement, foster growth, and
-            elevate our clients' online influence. By prioritizing transparency,
-            reliability, and continuous improvement, we strive to be the trusted
-            partner in your journey to fame and success in the ever-evolving
-            digital landscape.
-          </p>
+      <div
+        class="container mx-auto mt-5 login-container p-4 rounded-4 w-50 w-sm-75"
+      >
+        <div class="row justify-content-center">
+          <div class="">
+            <form>
+              <h3 class="fw-bolder">Login</h3>
+              <div class="mb-3 my-4">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="mb-3 my-4">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-login text-white w-100 fw-bolder my-4"
+              >
+                Login
+              </button>
+
+              <div class="mt-3 text-center">
+                <a href="#" class="me-3 text-black">Signup</a>
+                <a href="#" class="text-black">Forgot password?</a>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -286,6 +266,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
