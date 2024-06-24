@@ -272,8 +272,12 @@ body {
 
 .see-more {
   background-color: var(--blue-bg-color);
+  border: 1px solid var(--blue-bg-color) !important;
 }
-
+.see-more:hover {
+  background-color: transparent;
+  color: var(--blue-bg-color) !important;
+}
 .articles-cards {
   border: 1px solid var(--color-9);
   display: flex;
@@ -348,6 +352,39 @@ body {
 .i-service-imgs {
   background-color: var(--show-more);
 }
+
+/* blog */
+.blog-section {
+  margin: 8rem 0 !important;
+}
+
+.blog-heading {
+  margin-top: 4rem !important;
+}
+.blog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+.page-link {
+  border-radius: 1.75rem !important;
+  color: black !important;
+  font-weight: bolder;
+  padding: 0.5rem 1rem !important;
+}
+.active > .page-link,
+.page-link.active {
+  z-index: 3;
+  color: white !important;
+  background-color: var(--blue-bg-color);
+  border-color: var(--bs-pagination-active-border-color);
+  border-radius: 1.75rem !important;
+}
+.page-item {
+  border-radius: 1rem !important;
+  border-width: 0 !important;
+}
 /* media queries */
 /* Custom CSS for small screens */
 
@@ -360,6 +397,12 @@ body {
   }
 }
 @media (max-width: 991.98px) {
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
   .navbar-collapse {
     flex-basis: 100%;
   }
@@ -373,6 +416,12 @@ body {
   }
 }
 @media screen and (max-width: 481px) {
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
   .w-sm-75 {
     width: 75% !important;
   }
