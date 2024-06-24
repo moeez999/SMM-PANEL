@@ -314,8 +314,8 @@ body {
 }
 
 .btn-login {
-  background-color: var(--color3);
-  border: 1px solid var(--color3) !important;
+  background-color: var(--btn-sumbit);
+  border: 1px solid var(--btn-sumbit) !important;
 }
 
 .btn-login:hover {
@@ -385,6 +385,12 @@ body {
   border-radius: 1rem !important;
   border-width: 0 !important;
 }
+
+/* contactus */
+
+.contactus-section {
+  margin: 8rem 0 !important;
+}
 /* media queries */
 /* Custom CSS for small screens */
 
@@ -416,6 +422,9 @@ body {
   }
 }
 @media screen and (max-width: 481px) {
+  .fs-7-f {
+    font-size: 1rem !important;
+  }
   .blog {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
