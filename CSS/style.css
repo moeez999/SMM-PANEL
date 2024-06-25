@@ -391,6 +391,30 @@ body {
 .contactus-section {
   margin: 8rem 0 !important;
 }
+
+/* post */
+
+.rush-section {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem;
+}
+.w-30 {
+  width: 30% !important;
+}
+.related-servicecard {
+  background-color: var(--show-more);
+}
+.img-size {
+  width: 2rem;
+}
+.buy-me-btn {
+  background-color: var(--blue-bg-color);
+  border: 1px solid var(--blue-bg-color);
+}
+.buy-me-btn:hover {
+  background-color: transparent;
+  color: var(--blue-bg-color) !important;
+}
 /* media queries */
 /* Custom CSS for small screens */
 
