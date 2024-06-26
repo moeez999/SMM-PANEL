@@ -13,6 +13,7 @@
   --border-color: #ededed;
   --show-more: #f8f8f8;
   --gift-bg: #fff3f9;
+  --faq: #f9f9f9;
   --border-bottom: #dddddd;
 }
 
@@ -445,6 +446,50 @@ body {
 /* faq */
 .faq-section {
   margin: 8rem auto !important;
+}
+
+.faqs-bg {
+  background-color: var(--faq);
+}
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9 !important;
+}
+.faq-item {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.faq-question {
+  padding: 15px;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-answer {
+  display: none;
+  padding: 15px;
+
+  transition: max-height 0.3s ease;
+  background-color: white;
+}
+.icon {
+  font-weight: bold;
+  font-size: 18px;
+}
+.accordion-button::after {
+  content: "+" !important;
+  font-weight: bold;
+  margin-left: auto;
+}
+.accordion-button.collapsed::after {
+  content: "+" !important;
+}
+.accordion-button:not(.collapsed)::after {
+  content: "-" !important;
 }
 /* media queries */
 /* Custom CSS for small screens */
