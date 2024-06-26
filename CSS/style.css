@@ -29,6 +29,8 @@ body {
 }
 .menu-list {
   background-color: var(--blue-bg-color);
+  left: -18rem !important;
+  border-radius: 0 0 1rem 1rem !important;
 }
 
 .menu-li {
