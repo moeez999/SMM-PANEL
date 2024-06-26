@@ -441,6 +441,11 @@ body {
   background-color: transparent;
   color: var(--blue-bg-color) !important;
 }
+
+/* faq */
+.faq-section {
+  margin: 8rem auto !important;
+}
 /* media queries */
 /* Custom CSS for small screens */
 
