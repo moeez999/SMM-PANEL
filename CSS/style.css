@@ -27,7 +27,13 @@ body {
 .custom-nav-gap {
   gap: 4rem;
 }
+.menu-list {
+  background-color: var(--blue-bg-color);
+}
 
+.menu-li {
+  background-color: rgba(255, 255, 255, 0.28);
+}
 .no-border {
   border: none;
   outline: none !important;
@@ -251,6 +257,13 @@ body {
 .service-cards-container {
   overflow-x: hidden !important;
 }
+
+.prev {
+  top: 10rem !important;
+}
+.next {
+  top: 10rem !important;
+}
 .coverage-card {
   background-color: var(--show-more);
   width: 15rem;
@@ -443,6 +456,21 @@ body {
   .login-signup {
     margin-left: auto;
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sign-up {
+    padding: 0.25rem 0.75rem !important;
+  }
+  .navbar-brand img {
+    width: 6rem;
+  }
+  .navbar-toggler {
+    padding: 0 !important;
+  }
+  .lines-img {
+    width: 8rem;
   }
 }
 @media screen and (max-width: 481px) {

@@ -281,7 +281,7 @@ function renderServiceCards() {
           },
           1024: {
             slidesPerView: 6,
-            spaceBetween: 10,
+            spaceBetween: 30,
           },
         },
       });
