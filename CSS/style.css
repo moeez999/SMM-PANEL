@@ -538,7 +538,11 @@ body {
     margin-right: 0;
   }
 }
-
+@media screen and (max-width: 321px) {
+  .lines-img {
+    width: 6rem !important;
+  }
+}
 @media screen and (max-width: 375px) {
   .sign-up {
     padding: 0.25rem 0.75rem !important;
@@ -554,6 +558,12 @@ body {
   }
 }
 @media screen and (max-width: 481px) {
+  .bg-blue-custom {
+    border-radius: 0 !important;
+  }
+  .white-nav {
+    width: 100% !important;
+  }
   .fs-7-f {
     font-size: 1rem !important;
   }
