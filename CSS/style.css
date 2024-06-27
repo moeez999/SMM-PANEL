@@ -550,7 +550,7 @@ body {
 }
 @media screen and (max-width: 321px) {
   .lines-img {
-    width: 6rem !important;
+    width: 5rem !important;
   }
 }
 @media screen and (max-width: 375px) {
@@ -615,8 +615,14 @@ body {
   .smmpanel-section {
     margin: 1.5rem 0 !important;
   }
+  .w-sm-60 {
+    width: 60% !important;
+  }
+  .w-sm-60 p {
+    font-size: 0.75rem !important;
+  }
   .lines-img {
-    width: 10rem;
+    width: 5rem;
   }
   .social-icons {
     width: 2.5rem;
