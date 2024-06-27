@@ -27,6 +27,7 @@ body {
 .w-nav {
   border-radius: 0 0 0 1rem;
   padding: 1rem;
+  background-color: var(--blue-bg-color);
 }
 .bg-blue-custom {
   background-color: var(--blue-bg-color);
@@ -628,6 +629,11 @@ body {
   }
 }
 
+@media (max-width: 1025px) {
+  .white-nav {
+    width: 450px !important;
+  }
+}
 @media (min-width: 992px) {
   #socialContainer {
     grid-template-columns: repeat(6, 1fr);
