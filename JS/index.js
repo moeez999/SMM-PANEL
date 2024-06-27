@@ -182,6 +182,10 @@ function rederCoverageCards() {
           spaceBetween: 30,
         },
         1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        1440: {
           slidesPerView: 6,
           spaceBetween: 30,
         },
@@ -280,6 +284,10 @@ function renderServiceCards() {
             spaceBetween: 30,
           },
           1024: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+          1440: {
             slidesPerView: 6,
             spaceBetween: 30,
           },

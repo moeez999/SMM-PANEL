@@ -24,7 +24,14 @@ body {
 .custom-blue-bg {
   background-color: var(--blue-bg-color);
 }
-
+.w-nav {
+  border-radius: 0 0 0 1rem;
+  padding: 1rem;
+}
+.bg-blue-custom {
+  background-color: var(--blue-bg-color);
+  border: 0 0 0 1rem;
+}
 .custom-nav-gap {
   gap: 4rem;
 }
@@ -32,11 +39,14 @@ body {
   display: flex !important;
 }
 .menu-list {
-  background-color: var(--blue-bg-color);
+  background-color: white;
   left: -18rem !important;
   border-radius: 0 0 1rem 1rem !important;
 }
-
+.white-nav {
+  width: 500px;
+  background-color: white;
+}
 .menu-li {
   background-color: rgba(255, 255, 255, 0.28);
 }
@@ -493,11 +503,17 @@ body {
 }
 /* media queries */
 /* Custom CSS for small screens */
-
+@media (max-width: 1439px) {
+  .social-icons {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+}
 @media (max-width: 1281px) {
   #socialContainer {
     grid-template-columns: repeat(3, 1fr) !important;
   }
+
   .w-70 {
     width: 90% !important ;
   }
