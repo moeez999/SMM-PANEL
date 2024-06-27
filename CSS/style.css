@@ -91,11 +91,11 @@ body {
 .social-icons-container {
   border: 1px solid var(--border-color);
 }
-
-.social-icons-container:nth-child(1) {
+.social-icons-container:first-child {
   border: 1px solid var(--border-color);
-  padding: 1.5rem 0.5rem !important;
+  padding: 0.5rem 0.25rem !important;
 }
+
 .access-section {
   margin-top: 4rem;
 }
