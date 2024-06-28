@@ -52,7 +52,18 @@ body {
 .menu-li {
   background-color: rgba(255, 255, 255, 0.28);
 }
+.nav-accord .accordion-button {
+  background-color: rgba(255, 255, 255, 0.28);
+  border-radius: 0.25rem !important;
+  margin: 0.25rem 0;
+}
 
+.nav-accord .accordion-body {
+  padding: 0.5rem !important;
+}
+.accordion-body ul li {
+  border-bottom: 1px solid #ffffff;
+}
 .menu-li:hover {
   background-color: transparent !important;
 }
@@ -501,16 +512,45 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
-.accordion-button::after {
+
+.faq-section .accordion-button::after {
   content: "+" !important;
   font-weight: bold;
   margin-left: auto;
 }
-.accordion-button.collapsed::after {
+.faq-section .accordion-button.collapsed::after {
   content: "+" !important;
 }
-.accordion-button:not(.collapsed)::after {
+.faq-section .accordion-button:not(.collapsed)::after {
   content: "-" !important;
+}
+.bg-custom-blue {
+  background-color: var(--blue-bg-color) !important;
+}
+.parent-accordion-body {
+  padding: 0 !important;
+}
+.nav-accord .accordion-item {
+  background-color: var(--blue-bg-color) !important;
+}
+.nav-accord .accordion-button::after {
+  color: #ffffff !important;
+  display: none;
+}
+
+.custom-b-none {
+  --bs-accordion-border-width: 0 !important;
+}
+.nav .accordion * {
+  background-color: var(--blue-bg-color) !important;
+}
+.nav-accord .accordion-button {
+  color: white;
+}
+
+.sub-service-items {
+  background-color: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.09);
 }
 /* media queries */
 /* Custom CSS for small screens */
@@ -656,6 +696,16 @@ body {
 @media (max-width: 1025px) {
   .white-nav {
     width: 450px !important;
+  }
+
+  .ab-one {
+    background-color: transparent !important;
+    width: 8rem;
+  }
+
+  .custom-head {
+    display: flex;
+    justify-content: center;
   }
 }
 @media (min-width: 992px) {
