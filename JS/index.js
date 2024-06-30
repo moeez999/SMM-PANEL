@@ -57,7 +57,7 @@ function renderGiftBoxes(giftBoxes) {
   // Iterate over each gift box data and generate HTML
   giftBoxes.forEach((gift) => {
     const giftBoxHTML = `
-            <div class="gift-box rounded-4 px-2 px-md-4 py-2 py-md-3">
+            <div class="gift-box rounded-4 px-2 px-md-4 pt-2 pt-md-3">
                 <div class="d-flex gap-2">
                     <img src="./assets/gifts.png" alt="Gifts">
                     <img src="./assets/people.png" alt="People">
