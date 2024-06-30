@@ -94,11 +94,6 @@ body {
   border: 1px solid var(--color-white);
 }
 
-.nav-link:hover {
-  background-color: var(--color-white) !important;
-  color: var(--blue-bg-color) !important;
-}
-
 .text-blue {
   color: var(--blue-bg-color);
 }
