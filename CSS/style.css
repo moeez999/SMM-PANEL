@@ -50,19 +50,27 @@ body {
   border-radius: 0 0 1rem 0;
 }
 .menu-li {
-  background-color: rgba(255, 255, 255, 0.28);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .nav-accord .accordion-button {
-  background-color: rgba(255, 255, 255, 0.28);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 0.25rem !important;
-  margin: 0.25rem 0;
+  margin: 0.4rem 0;
 }
-
+.ml-custom {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 .nav-accord .accordion-body {
   padding: 0.5rem !important;
 }
 .accordion-body ul li {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 0.5rem !important;
+}
+.nav-accord .accordion-button img {
+  margin-right: 1rem;
 }
 .menu-li:hover {
   background-color: transparent !important;
@@ -244,6 +252,7 @@ body {
 }
 .timer-text {
   color: var(--color7);
+  margin: 0 !important;
 }
 .gap-8 {
   gap: 2rem;
@@ -614,6 +623,26 @@ body {
   }
 }
 @media screen and (max-width: 481px) {
+  .drop-heading {
+    position: absolute;
+    width: 100%;
+    top: 0 !important;
+    left: 50% !important;
+  }
+  .btn-drop {
+    padding: 1rem 1rem !important;
+    border-radius: 1.5rem !important;
+  }
+  .btn-amazing {
+    padding: 1rem 1rem !important;
+    border-radius: 1.5rem !important;
+  }
+  .sm-desc {
+    margin: 0 !important;
+  }
+  .pad-custom {
+    padding: 0 1rem;
+  }
   .bg-blue-custom {
     border-radius: 0 !important;
   }
@@ -664,9 +693,13 @@ body {
   .lines-img {
     width: 5rem;
   }
+  .social-icons-container p {
+    font-size: 0.7rem;
+    margin: 0 !important;
+  }
   .social-icons {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
   }
   .w-sm-100 {
     width: 100% !important;
@@ -709,6 +742,9 @@ body {
   }
 }
 @media (min-width: 992px) {
+  .gifts-div {
+    padding: 3rem 0 10rem 0 !important;
+  }
   #socialContainer {
     grid-template-columns: repeat(6, 1fr);
   }
