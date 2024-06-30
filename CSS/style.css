@@ -16,7 +16,14 @@
   --faq: #f9f9f9;
   --border-bottom: #dddddd;
 }
+@font-face {
+  font-family: "Baloo 2";
+  src: url(../assets/Baloo2-Regular.ttf);
+}
 
+.fw-bolder {
+  font-weight: 900 !important;
+}
 body {
   font-family: "Baloo 2";
 }
@@ -28,6 +35,10 @@ body {
   border-radius: 0 0 0 1rem;
   padding: 1rem;
   background-color: var(--blue-bg-color);
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
 .bg-blue-custom {
   background-color: var(--blue-bg-color);
@@ -41,11 +52,12 @@ body {
 }
 .menu-list {
   background-color: white;
-  left: -18rem !important;
+  left: -26rem !important;
+  top: 3.25rem !important;
   border-radius: 0 0 1rem 1rem !important;
 }
 .white-nav {
-  width: 500px;
+  width: 35rem;
   background-color: white;
   border-radius: 0 0 1rem 0;
 }
@@ -208,7 +220,7 @@ body {
   margin-bottom: 20px;
 }
 .details-title {
-  font-weight: bolder;
+  font-weight: 900 !important;
   margin-top: 20px;
   margin-bottom: 0;
 }
@@ -291,6 +303,7 @@ body {
 .join-me-soon {
   background-color: var(--join-soon);
   border: 1px solid var(--join-soon) !important;
+  border-radius: 1rem !important;
 }
 .join-me-soon:hover {
   background-color: transparent;
@@ -566,7 +579,7 @@ body {
     height: 5rem !important;
   }
 }
-@media (max-width: 1281px) {
+@media (max-width: 1230px) {
   #socialContainer {
     grid-template-columns: repeat(3, 1fr) !important;
   }
@@ -620,6 +633,12 @@ body {
   }
 }
 @media screen and (max-width: 481px) {
+  .join-me-soon {
+    padding: 1rem 1rem !important;
+  }
+  .gifts-box-container {
+    justify-content: start !important;
+  }
   .drop-heading {
     position: absolute;
     width: 100%;
@@ -725,7 +744,7 @@ body {
 
 @media (max-width: 1025px) {
   .white-nav {
-    width: 450px !important;
+    width: 20rem !important;
   }
 
   .ab-one {
@@ -739,6 +758,12 @@ body {
   }
 }
 @media (min-width: 992px) {
+  .menu-list {
+    background-color: white;
+    left: -26rem !important;
+    top: 3.25rem !important;
+    border-radius: 0 0 1rem 1rem !important;
+  }
   .gifts-div {
     padding: 3rem 0 10rem 0 !important;
   }
