@@ -22,942 +22,319 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light custom-blue-bg px-xl-4">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler no-border"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <img src="./assets/hamburger.png" alt="" />
-        </button>
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="./assets/Logo.png"
-            alt="Logo"
-            class="d-inline-block align-text-top"
-          />
-        </a>
-        <form class="login-signup d-lg-none">
-          <a class="btn text-white ms-2 login" href="/login.html" role="button"
-            >Login</a
-          >
-          <a
-            class="btn text-white border px-3 hover:bg-white sign-up"
-            href="#"
-            role="button"
-            >Sign Up</a
-          >
-        </form>
-        <div
-          class="collapse navbar-collapse justify-content-center justify-content-lg-start"
-          id="navbarNavDropdown"
-        >
-          <ul
-            class="navbar-nav align-items-lg-start me-lg-auto me-md-auto mb-2 mb-lg-0"
-          >
-            <div class="accordion custom-b-none" id="parentAccordion">
-              <!-- Parent Accordion Item -->
-              <div
-                class="accordion-item rounded-0 nav-accord bg-custom-blue d-lg-none"
-              >
-                <h2 class="accordion-header custom-head" id="headingParent">
-                  <button
-                    class="accordion-button p-1 d-flex justify-content-between ab-one d-flex justify-content-between"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseParent"
-                    aria-expanded="true"
-                    aria-controls="collapseParent"
-                  >
-                    <span class="ml-custom"
-                      >Services <img src="./assets/servicelogo.png" alt=""
-                    /></span>
-                    <img src="./assets/arrow-down.png" alt="" />
-                  </button>
-                </h2>
-                <div
-                  id="collapseParent"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingParent"
-                  data-bs-parent="#parentAccordion"
-                >
-                  <div class="accordion-body parent-accordion-body">
-                    <!-- Nested Child Accordions -->
-
-                    <!-- Child Accordion 1 -->
-                    <div class="accordion custom-b-none" id="childAccordion1">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingChild1">
-                          <button
-                            class="accordion-button p-1 d-flex justify-content-between"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseChild1"
-                            aria-expanded="false"
-                            aria-controls="collapseChild1"
-                          >
-                            <span
-                              ><img src="./assets/fb.png" alt="" />
-                              <span class="ms-2">Facebook Services</span></span
-                            >
-                            <img src="./assets/arrow-down.png" alt="" />
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseChild1"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingChild1"
-                          data-bs-parent="#childAccordion1"
-                        >
-                          <div class="accordion-body">
-                            <ul class="px-1">
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Child Accordion 1 -->
-
-                    <!-- Child Accordion 2 -->
-                    <div class="accordion custom-b-none" id="childAccordion2">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingChild2">
-                          <button
-                            class="accordion-button p-1 d-flex justify-content-between"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseChild2"
-                            aria-expanded="false"
-                            aria-controls="collapseChild2"
-                          >
-                            <span
-                              ><img src="./assets/youtube (2).png" alt="" />
-                              <span class="ms-2"> Youtube Services</span></span
-                            ><img src="./assets/arrow-down.png" alt="" />
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseChild2"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingChild2"
-                          data-bs-parent="#childAccordion2"
-                        >
-                          <div class="accordion-body">
-                            <ul class="px-1">
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Child Accordion 2 -->
-
-                    <!-- Repeat for Child Accordion 3 to 8 -->
-                    <!-- Child Accordion 3 -->
-                    <div class="accordion custom-b-none" id="childAccordion3">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingChild3">
-                          <button
-                            class="accordion-button p-1 d-flex justify-content-between"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseChild3"
-                            aria-expanded="false"
-                            aria-controls="collapseChild3"
-                          >
-                            <span
-                              ><img src="./assets/spotify.png" alt="" />
-                              <span class="ms-2"> Spotify Services</span></span
-                            >
-                            <img src="./assets/arrow-down.png" alt="" />
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseChild3"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingChild3"
-                          data-bs-parent="#childAccordion3"
-                        >
-                          <div class="accordion-body">
-                            <ul class="px-1">
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Child Accordion 3 -->
-
-                    <!-- Child Accordion 4 -->
-                    <div class="accordion custom-b-none" id="childAccordion4">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingChild4">
-                          <button
-                            class="accordion-button p-1 d-flex justify-content-between"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseChild4"
-                            aria-expanded="false"
-                            aria-controls="collapseChild4"
-                          >
-                            <span
-                              ><img src="./assets/twitter (2).png" alt="" />
-                              <span class="ms-2">Twitter Services</span></span
-                            >
-                            <img src="./assets/arrow-down.png" alt="" />
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseChild4"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingChild4"
-                          data-bs-parent="#childAccordion4"
-                        >
-                          <div class="accordion-body">
-                            <ul class="px-1">
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Child Accordion 4 -->
-
-                    <!-- Child Accordion 5 -->
-                    <div class="accordion custom-b-none" id="childAccordion5">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingChild5">
-                          <button
-                            class="accordion-button p-1 d-flex justify-content-between"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseChild5"
-                            aria-expanded="false"
-                            aria-controls="collapseChild5"
-                          >
-                            <span
-                              ><img src="./assets/thread.png" alt="" />
-                              <span class="ms-2">Threads Services</span></span
-                            >
-                            <img src="./assets/arrow-down.png" alt="" />
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseChild5"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingChild5"
-                          data-bs-parent="#childAccordion5"
-                        >
-                          <div class="accordion-body">
-                            <ul class="px-1">
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Child Accordion 5 -->
-
-                    <!-- Child Accordion 6 -->
-                    <div class="accordion custom-b-none" id="childAccordion6">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingChild6">
-                          <button
-                            class="accordion-button p-1 d-flex justify-content-between"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseChild6"
-                            aria-expanded="false"
-                            aria-controls="collapseChild6"
-                          >
-                            <span
-                              ><img src="./assets/tiktok.png" alt="" />
-                              <span class="ms-2"> Tiktok Services</span>
-                            </span>
-                            <img src="./assets/arrow-down.png" alt="" />
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseChild6"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingChild6"
-                          data-bs-parent="#childAccordion6"
-                        >
-                          <div class="accordion-body">
-                            <ul class="px-1">
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Child Accordion 6 -->
-
-                    <!-- Child Accordion 7 -->
-                    <div class="accordion custom-b-none" id="childAccordion7">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingChild7">
-                          <button
-                            class="accordion-button p-1 d-flex justify-content-between"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseChild7"
-                            aria-expanded="false"
-                            aria-controls="collapseChild7"
-                          >
-                            <span
-                              ><img src="./assets/pintrest.png" alt="" />
-                              <span class="ms-2"> Pintrest Services</span></span
-                            ><img src="./assets/arrow-down.png" alt="" />
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseChild7"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingChild7"
-                          data-bs-parent="#childAccordion7"
-                        >
-                          <div class="accordion-body">
-                            <ul class="px-1">
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Child Accordion 7 -->
-
-                    <!-- Child Accordion 8 -->
-                    <div class="accordion custom-b-none" id="childAccordion8">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingChild8">
-                          <button
-                            class="accordion-button p-1 d-flex justify-content-between"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseChild8"
-                            aria-expanded="false"
-                            aria-controls="collapseChild8"
-                          >
-                            <span
-                              ><img src="./assets/tele.png" alt="" />
-                              <span class="ms-2"> Telegram Services</span></span
-                            ><img src="./assets/arrow-down.png" alt="" />
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseChild8"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingChild8"
-                          data-bs-parent="#childAccordion8"
-                        >
-                          <div class="accordion-body">
-                            <ul class="px-1">
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                              <li class="list-unstyled">
-                                <a
-                                  class="text-decoration-none text-white"
-                                  href=""
-                                  >Facebook Page Likes</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Child Accordion 8 -->
-
-                    <!-- End Repeat for Child Accordion 3 to 8 -->
-                  </div>
-                </div>
-              </div>
-              <!-- End Parent Accordion Item -->
-            </div>
-
-            <ul
-              class="d-flex gap-3 justify-content-center container mx-auto d-lg-none"
-            >
-              <li class="nav-item">
-                <a class="nav-link text-white fs-6" href="blog.html">BLOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-6" href="api.html">API</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-6" href="contactus.html"
-                  >CONTACT US</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-6" href="aboutus.html"
-                  >ABOUT US</a
-                >
-              </li>
-            </ul>
-            <li class="nav-item d-none d-lg-block">
-              <a class="nav-link text-white fs-6" href="blog.html">BLOG</a>
-            </li>
-            <li class="nav-item d-none d-lg-block">
-              <a class="nav-link text-white fs-6" href="api.html">API</a>
-            </li>
-            <li class="nav-item d-none d-lg-block">
-              <a class="nav-link text-white fs-6" href="contactus.html"
-                >CONTACT US</a
-              >
-            </li>
-            <li class="nav-item d-none d-lg-block">
-              <a class="nav-link text-white fs-6" href="aboutus.html"
-                >ABOUT US</a
-              >
-            </li>
-            <li class="nav-item dropdown d-none d-lg-block">
-              <a
-                class="nav-link text-white fs-6 dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="./assets/servicelogo.png" alt="Service Logo" />
-                SERVICES
-                <!-- <img src="./assets/dropdown-arrow.png" class="dropdown-arrow" /> -->
-              </a>
-              <ul
-                class="dropdown-menu menu-list p-0"
-                aria-labelledby="navbarDropdown"
-              >
-                <div class="d-flex w-nav gap-4 px-4 bg-blue-custom">
-                  <div class="bg-blue-custom">
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/fb.png" alt="" /> Facebook Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/youtube (2).png" alt="" /> Youtube
-                        Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/spotify.png" alt="" /> Spotify
-                        Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/twitter (2).png" alt="" /> Twitter
-                        Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/thread.png" alt="" /> Threads
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/tiktok.png" alt="" /> Tiktok
-                        Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/pintrest.png" alt="" /> Pintrest
-                        Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/tele.png" alt="" /> Telegram
-                        Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                  </div>
-
-                  <div class="bg-blue-custom d-none d-md-none d-lg-block">
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/fb.png" alt="" /> Facebook Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/fb.png" alt="" /> Youtube Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/spotify.png" alt="" /> Spotify
-                        Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/twitter (2).png" alt="" /> Twitter
-                        Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/thread.png" alt="" /> Threads
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/tiktok.png" alt="" /> Tiktok
-                        Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/pintrest.png" alt="" /> Pintrest
-                        Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                    <li class="menu-li rounded-3">
-                      <a
-                        class="px-1 dropdown-item text-white my-2 d-flex justify-content-between align-items-center gap-4"
-                        href="#"
-                        ><img src="./assets/tele.png" alt="" /> Telegram
-                        Services
-                        <svg
-                          class="svg-icon"
-                          style="
-                            width: 0.75em;
-                            height: 0.75em;
-                            vertical-align: middle;
-                            fill: #ffffff;
-                            overflow: hidden;
-                          "
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"
-                          /></svg
-                      ></a>
-                    </li>
-                  </div>
-                </div>
-
-                <div class="bg-white white-nav py-2">
-                  <ul class="d-flex flex-wrap gap-2">
-                    <li
-                      class="list-unstyled sub-service-items rounded-2 px-2 py-1"
-                    >
-                      <a href="" class="text-decoration-none text-black"
-                        >Facebook Page likes</a
-                      >
-                    </li>
-                    <li
-                      class="list-unstyled sub-service-items rounded-2 px-2 py-1"
-                    >
-                      <a href="" class="text-decoration-none text-black"
-                        >Facebook Page likes</a
-                      >
-                    </li>
-                    <li
-                      class="list-unstyled sub-service-items rounded-2 px-2 py-1"
-                    >
-                      <a href="" class="text-decoration-none text-black"
-                        >Facebook Page likes</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+        <div class="container-fluid">
+            <button class="navbar-toggler no-border" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="./assets/hamburger.png" alt="" />
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/Logo.png" alt="Logo" class="d-inline-block align-text-top" />
+            </a>
+            <form class="login-signup d-lg-none">
+                   <a class="btn text-white ms-2 login" href="/login.html" role="button">Login</a>
+                <a class="btn text-white border px-3 hover:bg-white sign-up" href="#" role="button">Sign Up</a>
+            </form>
+            <div class="collapse navbar-collapse justify-content-center justify-content-lg-start" id="navbarNavDropdown">
+                <ul class="navbar-nav   align-items-lg-start me-lg-auto me-md-auto mb-2 mb-lg-0">
+                <div class="accordion custom-b-none" id="parentAccordion">
+  <!-- Parent Accordion Item -->
+  <div class="accordion-item rounded-0 nav-accord bg-custom-blue d-lg-none">
+    <h2 class="accordion-header custom-head" id="headingParent">
+      <button class="accordion-button p-1 d-flex justify-content-between ab-one d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseParent" aria-expanded="true" aria-controls="collapseParent">
+       <span class="ml-custom">Services <img src="./assets/servicelogo.png" alt=""></span> <img src="./assets/arrow-down.png" alt="">
+      </button>
+    </h2>
+    <div id="collapseParent" class="accordion-collapse collapse show" aria-labelledby="headingParent" data-bs-parent="#parentAccordion">
+      <div class="accordion-body parent-accordion-body">
+        <!-- Nested Child Accordions -->
+        
+        <!-- Child Accordion 1 -->
+        <div class="accordion custom-b-none" id="childAccordion1">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingChild1">
+              <button class="accordion-button  px-1 py-2 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild1" aria-expanded="false" aria-controls="collapseChild1">
+      <span><img src="./assets/fb.png" alt=""> <span class="ms-2">Facebook Services</span></span>   <img src="./assets/arrow-down.png" alt="">
+              </button>
+            </h2>
+            <div id="collapseChild1" class="accordion-collapse collapse" aria-labelledby="headingChild1" data-bs-parent="#childAccordion1">
+              <div class="accordion-body">
+              <ul class="px-1">
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
               </ul>
-            </li>
-          </ul>
-          <form class="login-signup d-none d-lg-flex">
-            <a
-              class="btn text-white ms-2 login"
-              href="/login.html"
-              role="button"
-              >Login</a
-            >
-            <a class="btn text-white border px-3 sign-up" href="#" role="button"
-              >Sign Up</a
-            >
-          </form>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- End Child Accordion 1 -->
+        
+        <!-- Child Accordion 2 -->
+        <div class="accordion custom-b-none" id="childAccordion2">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingChild2">
+              <button class="accordion-button p-1 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild2" aria-expanded="false" aria-controls="collapseChild2">
+          <span><img src="./assets/youtube (2).png" alt=""> <span class="ms-2"> Youtube Services</span></span><img src="./assets/arrow-down.png" alt="">
+              </button>
+            </h2>
+            <div id="collapseChild2" class="accordion-collapse collapse" aria-labelledby="headingChild2" data-bs-parent="#childAccordion2">
+              <div class="accordion-body">
+                <ul class="px-1">
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                 <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Child Accordion 2 -->
+        
+        <!-- Repeat for Child Accordion 3 to 8 -->
+        <!-- Child Accordion 3 -->
+        <div class="accordion custom-b-none" id="childAccordion3">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingChild3">
+              <button class="accordion-button p-1 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild3" aria-expanded="false" aria-controls="collapseChild3">
+          <span><img src="./assets/spotify.png" alt=""> <span class="ms-2"> Spotify Services</span></span> <img src="./assets/arrow-down.png" alt="">
+              </button>
+            </h2>
+            <div id="collapseChild3" class="accordion-collapse collapse" aria-labelledby="headingChild3" data-bs-parent="#childAccordion3">
+              <div class="accordion-body">
+              <ul class="px-1">
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Child Accordion 3 -->
+        
+        <!-- Child Accordion 4 -->
+        <div class="accordion custom-b-none" id="childAccordion4">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingChild4">
+              <button class="accordion-button p-1 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild4" aria-expanded="false" aria-controls="collapseChild4">
+          <span><img src="./assets/twitter (2).png" alt="">  <span class="ms-2">Twitter Services</span></span>   <img src="./assets/arrow-down.png" alt="">
+              </button>
+            </h2>
+            <div id="collapseChild4" class="accordion-collapse collapse" aria-labelledby="headingChild4" data-bs-parent="#childAccordion4">
+              <div class="accordion-body">
+              <ul class="px-1">
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Child Accordion 4 -->
+        
+        <!-- Child Accordion 5 -->
+        <div class="accordion custom-b-none" id="childAccordion5">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingChild5">
+              <button class="accordion-button p-1 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild5" aria-expanded="false" aria-controls="collapseChild5">
+         <span><img src="./assets/thread.png" alt="">  <span class="ms-2">Threads Services</span></span>  <img src="./assets/arrow-down.png" alt="">
+              </button>
+            </h2>
+            <div id="collapseChild5" class="accordion-collapse collapse" aria-labelledby="headingChild5" data-bs-parent="#childAccordion5">
+              <div class="accordion-body">
+               <ul class="px-1">
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Child Accordion 5 -->
+        
+        <!-- Child Accordion 6 -->
+        <div class="accordion custom-b-none" id="childAccordion6">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingChild6">
+              <button class="accordion-button p-1 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild6" aria-expanded="false" aria-controls="collapseChild6">
+         <span><img src="./assets/tiktok.png" alt="">   <span class="ms-2"> Tiktok Services</span> </span> <img src="./assets/arrow-down.png" alt="">
+              </button>
+            </h2>
+            <div id="collapseChild6" class="accordion-collapse collapse" aria-labelledby="headingChild6" data-bs-parent="#childAccordion6">
+              <div class="accordion-body">
+             <ul class="px-1">
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Child Accordion 6 -->
+        
+        <!-- Child Accordion 7 -->
+        <div class="accordion custom-b-none" id="childAccordion7">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingChild7">
+              <button class="accordion-button p-1 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild7" aria-expanded="false" aria-controls="collapseChild7">
+           <span><img src="./assets/pintrest.png" alt="">  <span class="ms-2"> Pintrest Services</span></span><img src="./assets/arrow-down.png" alt="">
+              </button>
+            </h2>
+            <div id="collapseChild7" class="accordion-collapse collapse" aria-labelledby="headingChild7" data-bs-parent="#childAccordion7">
+              <div class="accordion-body">
+             <ul class="px-1">
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Child Accordion 7 -->
+        
+        <!-- Child Accordion 8 -->
+        <div class="accordion custom-b-none" id="childAccordion8">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingChild8">
+              <button class="accordion-button p-1 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild8" aria-expanded="false" aria-controls="collapseChild8">
+          <span><img src="./assets/tele.png" alt="">   <span class="ms-2">   Telegram Services</span></span><img src="./assets/arrow-down.png" alt="">
+              </button>
+            </h2>
+            <div id="collapseChild8" class="accordion-collapse collapse" aria-labelledby="headingChild8" data-bs-parent="#childAccordion8">
+              <div class="accordion-body">
+             <ul class="px-1">
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+                <li class="list-unstyled"><a class="text-decoration-none text-white" href="">Facebook Page Likes</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Child Accordion 8 -->
+        
+        <!-- End Repeat for Child Accordion 3 to 8 -->
+        
       </div>
+    </div>
+  </div>
+  <!-- End Parent Accordion Item -->
+</div>
+
+                    <ul class="d-flex gap-3 justify-content-center container mx-auto d-lg-none">
+                           <li class="nav-item">
+                        <a class="nav-link text-white fs-6" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-6" href="api.html">API</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-6" href="contactus.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-6" href="aboutus.html">ABOUT US</a>
+                    </li> 
+                    </ul>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link text-white fs-6" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link text-white fs-6" href="api.html">API</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link text-white fs-6" href="contactus.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link text-white fs-6" href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link text-white fs-6 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/servicelogo.png" alt="Service Logo" />
+                            SERVICES
+                            <!-- <img src="./assets/dropdown-arrow.png" class="dropdown-arrow" /> -->
+                        </a>
+                        <ul class="dropdown-menu menu-list p-0" aria-labelledby="navbarDropdown">
+                            
+                           <div class="d-flex w-nav gap-4 px-4 bg-blue-custom">
+                               <div class="bg-blue-custom">
+                                <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/fb.png" alt=""> Facebook Services  <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/youtube (2).png" alt=""> Youtube Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/spotify.png" alt=""> Spotify Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/twitter (2).png" alt=""> Twitter Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/thread.png" alt=""> Threads Services<div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/tiktok.png" alt=""> Tiktok Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/pintrest.png" alt=""> Pintrest Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                                        <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/tele.png" alt=""> Telegram Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                               </div>
+                               
+                               <div class="bg-blue-custom d-none d-md-none d-lg-block">
+                                <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/fb.png" alt=""> Facebook Services  <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/fb.png" alt=""> Youtube Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/spotify.png" alt=""> Spotify Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/twitter (2).png" alt=""> Twitter Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/thread.png" alt=""> Threads Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/tiktok.png" alt=""> Tiktok Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                    <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/pintrest.png" alt=""> Pintrest Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                                                        <li class="menu-li rounded-2"><a class="px-1 dropdown-item text-white my-2 d-flex  align-items-center gap-4" href="#"><img src="./assets/tele.png" alt=""> Telegram Services <div class="d-flex justify-content-end w-100">
+                                  <svg class="svg-icon" style="width: 0.75em; height: 0.75em;vertical-align: middle;fill: #FFFFFF;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M221.740994 934.737686a51.197491 51.197491 0 1 0 68.502243 76.079472l511.974913-460.777422a51.197491 51.197491 0 0 0 0-76.079472l-511.974913-460.777422A51.197491 51.197491 0 1 0 221.740994 89.262314L691.426779 512 221.740994 934.737686z"  /></svg>
+                                </div></a></li>
+                               </div>
+                           </div>
+
+                       <div class="bg-white white-nav py-2">
+                        <ul class="d-flex flex-wrap gap-2">
+                          <li class="list-unstyled sub-service-items rounded-2 px-2 py-1"><a href="" class="text-decoration-none text-black">Facebook Page likes</a></li>
+                          <li class="list-unstyled sub-service-items rounded-2 px-2 py-1"><a href="" class="text-decoration-none text-black">Facebook Page likes</a></li>
+                          <li class="list-unstyled sub-service-items rounded-2 px-2 py-1"><a href="" class="text-decoration-none text-black">Facebook Page likes</a></li>
+                        </ul>
+
+                       </div>
+                          
+                        </ul>
+                    </li>
+                </ul>
+                <form class="login-signup d-none d-lg-flex">
+                    <a class="btn text-white ms-2 login" href="/login.html" role="button">Login</a>
+                    <a class="btn text-white border px-3 sign-up" href="#" role="button">Sign Up</a>
+                </form>
+            </div>
+        </div>
     </nav>
 
     <section class="aboutus-section container mx-lg-auto px-4">
